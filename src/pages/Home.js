@@ -4,7 +4,7 @@ import home from "../static/img/home.png";
 
 function Home() {
   return (
-    <div className="home" >
+    <div className="home" id="Home">
       <img src={home} className="Logo" />;
       <div className="perkenalan">
         <div style={{fontSize:24}}>Hallo</div>

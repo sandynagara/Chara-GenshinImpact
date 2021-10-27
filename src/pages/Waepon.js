@@ -12,7 +12,7 @@ function Waepon() {
   };
 
   return (
-    <div className="waepon">
+    <div className="waepon" id="Waepon">
       <p style={{ color: "white", fontSize: 20 }}>
         <b>Waepon</b>
       </p>

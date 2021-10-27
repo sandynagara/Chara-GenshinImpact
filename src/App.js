@@ -5,7 +5,7 @@ import Porto from './pages/porto';
 import Navbar from './Component/Navigasi/Navbar';
 import './App.css';
 import Waepon from './pages/Waepon';
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 
 function App() {
 
@@ -13,9 +13,9 @@ function App() {
   return (
     <>
       <Navbar/>
-      <Home/>
-      <Porto/>
-      <Waepon/>
+      <Home name="Home"/>
+      <Porto name="Porto"/>
+      <Waepon />
     </>
   );
 }

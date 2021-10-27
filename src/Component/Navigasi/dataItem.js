@@ -14,8 +14,8 @@ export const Dataitem = [
         path:'/waepon',
     },
     {
-        title:'About',
-        path:'/about',
+        title:'Peta',
+        path:'/peta',
     },
     {
         title:'Contact',

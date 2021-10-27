@@ -54,7 +54,7 @@ export default function Porto() {
   },[posisi])
 
   return (
-    <div className="porto" id="porto">
+    <div className="porto" id="Character">
       <p style={{ color: "white", fontSize: 20 }}>
         <b>Character</b>
       </p>
