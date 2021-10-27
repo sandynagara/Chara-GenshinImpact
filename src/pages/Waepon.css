@@ -1,0 +1,83 @@
+
+
+.waepon{
+    padding-top: 20px;
+    margin: 0;
+    padding-bottom: 20px;
+    background-color: rgb(34,34,34);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.backgroundNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 50% 0 0;
+    background-color: rgb(207, 207, 207);
+    transition: 500ms;
+ 
+}
+
+.imgNav{
+    width: 40px;
+    height: 40px;
+   
+    z-index: 2;
+}
+
+.imgNav:hover{
+    cursor: pointer;
+}
+
+.NavWaepon{
+    display: flex;
+    justify-content:center ;
+    
+}
+
+.kotak{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  1fr ;
+    grid-gap: 20px;
+    margin-top: 10px;
+    margin-left: calc(10vw);
+    margin-right: calc(10vw);
+    border-radius: 10px;
+    background-color: rgb(207, 207, 207);
+    padding: 30px 20px;
+    transition: 250ms;
+}
+
+.itemWaepon{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgWaepon{
+    width: 100px;
+    height: 100px;
+}
+
+.itemWaepon img{
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.penghubung{
+    background-color: rgb(207, 207, 207);
+    height:10px;
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 500ms;
+    position:absolute;
+}

@@ -7,14 +7,12 @@ import * as Io from "react-icons/io";
 
 export default function Porto() {
   const [filter, setFilter] = useState("All");
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(DataPorto);
   const [dataFilter, setDataFilter] = useState(DataPorto);
   const [posisi, setPosisi] = useState(3);
 
   const slicingData = (data) => {
-    setPosisi(3)
-    console.log(posisi)
-    var data2 = data.slice(0, posisi);
+    var data2 = data.slice(0, 3);
     setData(data2);
     console.log(data,"data")
   };
@@ -25,20 +23,20 @@ export default function Porto() {
   }
 
   useEffect(() => {
-    var tes = []
+    setPosisi(3)
     if(filter !== "All"){
+      var tes = []
       DataPorto.map((e)=>{
         if(e.tipe==filter){
           tes.push(e)
-          console.log(tes)
         }
       })
       aturdataFilter(tes)
       slicingData(tes);
     }else{
       console.log("first")
-      aturdataFilter(tes)
-      slicingData(dataFilter);
+      aturdataFilter(DataPorto)
+      slicingData(DataPorto);
     }
   }, [filter]);
 
@@ -47,20 +45,20 @@ export default function Porto() {
     setFilter(e);
   };
 
-  function clickHandlerTambah (e) {
-    
-    console.log(DataPorto.length,"porto");
-    setPosisi(posisi+3);
-    var data2 = DataPorto.slice(0, posisi+3);
-    setData(data2);
-  };
+  useEffect(()=>{
+    if(posisi!==3){
+      console.log(posisi) 
+      var data2 = dataFilter.slice(0, posisi);
+      setData(data2);
+    }
+  },[posisi])
 
   return (
     <div className="porto" id="porto">
       <p style={{ color: "white", fontSize: 20 }}>
-        <b>Featured Portfolio</b>
+        <b>Character</b>
       </p>
-      <NavPorto filter={clickHandler} />
+      <NavPorto filter={clickHandler} cek={filter}/>
       <div className="griditemPorto">
         {data.map((e) => {
           var tipe = e.tipe;
@@ -72,7 +70,7 @@ export default function Porto() {
         })}
       </div>
       {dataFilter.length >= posisi ? (
-        <div className="tambah" onClick={clickHandlerTambah}>
+        <div className="tambah" onClick={()=>{setPosisi(posisi+3)}}>
           <Io.IoIosArrowDropdownCircle
             style={{ width: 500 + "px", height: 50 + "px" }}
           />

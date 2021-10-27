@@ -6,12 +6,12 @@ export const Dataitem = [
         path:'/home',
     },
     {
-        title:'Portofolio',
-        path:'/portofolio',
+        title:'Character',
+        path:'/character',
     },
     {
-        title:'Resume',
-        path:'/resume',
+        title:'Waepon',
+        path:'/waepon',
     },
     {
         title:'About',
