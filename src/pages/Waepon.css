@@ -78,6 +78,7 @@
     width: 50px;
     margin-left: 5px;
     margin-right: 5px;
-    transition: 500ms;
+    transition: 250ms;
+    transition-delay:250ms;
     position:absolute;
 }

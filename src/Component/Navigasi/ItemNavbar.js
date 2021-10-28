@@ -13,7 +13,6 @@ export default function ItemNavbar({ title }) {
     <Link
       activeClass="active"
       to={title}
-      spy={true}
       smooth={true}
       duration={500}
       style={({ marginLeft: 15 + "px" }, { marginRight: 15 + "px" })}

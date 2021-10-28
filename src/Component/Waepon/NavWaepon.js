@@ -31,7 +31,7 @@ function NaVitemWaepon({ item, senjataTipe, senjata }) {
   return (
     <div
       className="backgroundNav"
-      style={senjata == item.name ? {} : { borderRadius: 50 + "%" }}
+      style={senjata == item.name ? {} : { borderRadius: 50 + "%",transitionDelay:250+"ms" }}
     >
       <img
         className="imgNav"
@@ -57,7 +57,7 @@ function NavWaepon({ senjataTipe, senjata }) {
             <NaVitemWaepon item={e} senjataTipe={tes} senjata={senjata} />
             <div
               className="penghubung"
-              style={e.name !== senjata ? { height: 0 + "px" } : {}}
+              style={e.name !== senjata ? { height: 0 + "px",transitionDelay:0+"ms" } : {}}
             />
           </div>
         );
