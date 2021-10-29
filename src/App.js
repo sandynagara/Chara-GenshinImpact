@@ -5,7 +5,7 @@ import Porto from './pages/porto';
 import Navbar from './Component/Navigasi/Navbar';
 import './App.css';
 import Waepon from './pages/Waepon';
-
+import PetaGenshin from './pages/PetaGenshin';
 
 function App() {
 
@@ -16,6 +16,7 @@ function App() {
       <Home name="Home"/>
       <Porto name="Porto"/>
       <Waepon />
+      <PetaGenshin/>
     </>
   );
 }

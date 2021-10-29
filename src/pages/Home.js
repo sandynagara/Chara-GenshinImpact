@@ -8,8 +8,6 @@ const wallpaper = [{img:"https://gamestation.co.id/wp-content/uploads/2021/08/Ge
 function Home() {
 
   const [currentCount, setCount] = useState(1);
-  const [state, setstate] = useState()
-  const timer = () => setCount(currentCount + 1);
 
   useEffect(() => {
     console.log(`initializing interval`);
